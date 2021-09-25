@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+        body
+        {
+            background-color: cadetblue;
+        }
+        #tab
+        {
+            
+            width: 50%;
+            margin:20%;
+            
+        }
+       
+        table,th,td,tr{
+            border:1px solid white;
+            color:white;
+            font-size: large;
+        }
+        #container{
+            /*background-image: url("img1.jfif");
+            background-repeat: no-repeat;*/
+            background-size: cover;
+            width:100%;
+            height:180px;
+            color:rgb(228, 136, 17);
+            font-weight: bolder;
+            font-size: 1.2em;
+        }
+        #btn-group {
+	background-image: url("img1.jfif");
+    
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	
+	width: 50%;
+	font-size: 18px;
+	/*padding: 10px;
+	margin: 20px 0px;*/
+    display: inline;
+    
+    float:left;
+    
+}
+
+        #btn-group{
+            display: inline-block;
+            /*margin-left: 10px;
+            border:1px solid white;*/
+            width:100%;
+            height:70px;
+        }
+        #todo
+        {
+            width:15%;
+            height:50%;
+            margin:15px;
+            margin-left: 30%;
+            border-radius: 2em;
+            background-color:whitesmoke;
+            font-weight: bolder;
+            font-size: 0.8em;
+            color:rgb(145, 34, 34);
+            cursor: pointer;
+        }
+        #logout
+        {
+            width:15%;
+            height:50%;
+            border-radius: 2em;
+            background-color:whitesmoke;
+            font-weight: bolder;
+            font-size: 0.8em;
+            color:rgb(145, 34, 34);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="btn-group">
+        <button id="todo" onclick="makelist()">TO-DO-LIST</button>
+        <button id="logout" onclick="logout()">LogOut</button>
+    </div>
+    <div id="tabdiv" hidden="true">
+        <!--<input type="checkbox" id="ckbx" >-->
+        <table id="tab" class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>Sl.no</th>                    
+                    <th>Title</th>
+                    <th>Checked</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>
