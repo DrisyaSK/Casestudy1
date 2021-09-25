@@ -38,7 +38,7 @@ function makelist()
                     var row=`<tr>
                     <td>${i+1}</td>
                     <td>${resp[i].title}</td>
-                    <td><input type="checkbox" id="ckbx" onclick="countcheck()"> </td>
+                    <td><input type="checkbox" id="ckbx" onchange="countcheck()"> </td>
                     </tr>`;
                     table.innerHTML+=row;
                 }
@@ -60,11 +60,11 @@ function countcheck()
     var ckbx=document.getElementById('ckbx');    
     console.log("inside fn");
     
-    //alert(ckbx.checked);
+    alert(ckbx.checked);
     if(ckbx.checked==true)
     {
         count++;
-        //alert("checked" +count);
+        alert("checked" +count);
 
     }
     else
@@ -72,7 +72,7 @@ function countcheck()
         
         if (count!=0) count--;
         else count=0;
-        
+        alert("unchecked"+count);
     }
     if(count>=5)
             alert("Congrats! 5 tasks have been successfully completed.");
