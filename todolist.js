@@ -60,11 +60,11 @@ function countcheck()
     var ckbx=document.getElementById('ckbx');    
     console.log("inside fn");
     
-    alert(ckbx.checked);
+    //alert(ckbx.checked);
     if(ckbx.checked==true)
     {
         count++;
-        alert("checked" +count);
+        //alert("checked" +count);
 
     }
     else
@@ -72,7 +72,7 @@ function countcheck()
         
         if (count!=0) count--;
         else count=0;
-        alert("unchecked"+count);
+        //alert("unchecked"+count);
     }
     if(count>=5)
             alert("Congrats! 5 tasks have been successfully completed.");
